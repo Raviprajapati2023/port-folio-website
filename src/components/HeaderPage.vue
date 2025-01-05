@@ -11,7 +11,7 @@
           v-for="item in menuItems"
           :key="item.label"
           class="hover:text-orange-500 transition-colors"
-          :href="`#${item.link}`"
+          @click.prevent="scrollToSection(item.link)"
         >
           {{ item.label }}
         </a>
@@ -61,28 +61,23 @@
 <script setup>
 import { ref } from "vue";
 
-const profileImage = ref("/public/profile.jpeg");
+const profileImage = ref("/profile.jpeg");
 const name = ref("Ravi");
 const description = ref(
   "An enthusiastic & highly energetic Technical development high revenue generating products."
 );
 
 const menuItems = ref([
-  {
-    label: "Services",
-    link: "services",
-  },
-  {
-    label: "Skills",
-    link: "skills",
-  },
-  {
-    label: "About Me",
-    link: "aboutMe",
-  },
-  {
-    label: "Contact",
-    link: "contact",
-  },
+  { label: "Services", link: "services" },
+  { label: "Skills", link: "skills" },
+  { label: "About Me", link: "aboutMe" },
+  { label: "Contact", link: "contact" },
 ]);
+
+const scrollToSection = (sectionId) => {
+  const element = document.getElementById(sectionId);
+  if (element) {
+    element.scrollIntoView({ behavior: "smooth" });
+  }
+};
 </script>
