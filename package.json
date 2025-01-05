@@ -1,8 +1,8 @@
 {
   "name": "quasar-project",
   "version": "0.0.1",
-  "description": "A Quasar Project",
-  "productName": "Flip Card App",
+  "description": "A Port Folio Website",
+  "productName": "Port Folio",
   "author": "ravi prajapati <prajapati.ravi2023@gmail.com>",
   "private": true,
   "scripts": {
@@ -13,7 +13,6 @@
     "build": "quasar build"
   },
   "dependencies": {
-    "@quasar/app": "^3.3.3",
     "@quasar/extras": "^1.0.0",
     "annyang": "^2.6.1",
     "axios": "^1.2.1",
@@ -22,6 +21,7 @@
     "konva": "^9.3.16",
     "pinia": "^2.0.11",
     "quasar": "^2.6.0",
+    "sass": "^1.83.1",
     "vue": "^3.4.0",
     "vue-i18n": "^9.0.0",
     "vue-konva": "^3.2.0",
