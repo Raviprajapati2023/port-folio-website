@@ -1,5 +1,4 @@
 <template>
-  <!-- Services Section -->
   <section class="container mx-auto mb-16">
     <h2 class="text-4xl font-bold mb-12">My Services</h2>
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -30,7 +29,7 @@ const services = [
     icon: "code",
     title: "WEB DEVELOPMENT",
     description:
-      "Have hands-on experience creating UI development using React Js, Vue Js, Nuxt js, Microsoft Authentication, stripe payment gateway, and more.",
+      "Have hands-on experience creating UI development using Vue Js, Nuxt js, Microsoft Authentication, stripe payment gateway, and more.",
   },
   {
     icon: "edit",
@@ -48,7 +47,7 @@ const services = [
     icon: "code",
     title: "WEB DEVELOPMENT",
     description:
-      "Experienced in HTML5, CSS3, JavaScript, React Js, Vue Js, Quasar, Tailwind CSS, GIT, Jira, Bitbucket, Bootstrap, and Pinia Technologies.",
+      "Experienced in HTML5, CSS3, JavaScript, Vue Js, Quasar, Tailwind CSS, GIT, Jira, Bitbucket, Bootstrap, and Pinia Technologies.",
   },
   {
     icon: "bug_report",

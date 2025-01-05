@@ -41,7 +41,6 @@ const skills = ref([
   "SaaS",
   "Nuxt.js",
   "Vuetify",
-  "Redux",
   "Prime Vue",
   "Node.js",
   "Express.js",
@@ -53,5 +52,7 @@ const skills = ref([
   "Authentication",
   "MongoDB",
   "Kendo UI",
+  "Python",
+  "ML",
 ]);
 </script>

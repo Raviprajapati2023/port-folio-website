@@ -2,7 +2,7 @@
   <footer class="bg-gray-900">
     <div class="-mb-1">
       <svg
-        fill="#1a202c"
+        fill="#000435"
         preserveAspectRatio="none"
         viewBox="0 0 1200 120"
         xmlns="http://www.w3.org/2000/svg"
@@ -27,26 +27,39 @@
           <div>
             <h3 class="text-lg font-semibold mb-4">Connect with Us</h3>
             <div class="flex space-x-4">
+              <!-- GitHub Link -->
               <a
-                :href="constants?.SocialMedia?.facebook"
-                aria-label="Facebook"
-                class="p-2 bg-gray-800 rounded-full hover:bg-blue-600"
+                :href="SocialMedia?.github"
+                aria-label="GitHub"
+                class="px-2 py-1 bg-gray-800 rounded hover:bg-gray-900"
                 rel="noopener noreferrer"
                 target="_blank"
               >
-                <svg
-                  class="w-5 h-5 text-white"
-                  fill="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"
-                  />
-                </svg>
+                <i class="fa-brands fa-github"></i>
+              </a>
+
+              <!-- LinkedIn Link -->
+              <a
+                :href="SocialMedia?.linkedin"
+                aria-label="LinkedIn"
+                class="px-2 py-1 bg-gray-800 rounded hover:bg-blue-700"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <i class="fa-brands fa-linkedin"></i>
+              </a>
+
+              <!-- Email Link -->
+              <a
+                :href="`mailto:${SocialMedia?.email}`"
+                aria-label="Email"
+                class="px-2 py-1 bg-gray-800 rounded hover:bg-red-600"
+                rel="noopener noreferrer"
+              >
+                <i class="fa-regular fa-envelope"></i>
               </a>
             </div>
           </div>
-          <!-- Contact -->
           <div>
             <h3 class="text-lg font-semibold mb-4">Get in Touch</h3>
             <p class="text-gray-400 mb-2">
@@ -72,3 +85,10 @@
     </div>
   </footer>
 </template>
+<script setup>
+const SocialMedia = {
+  github: "https://github.com/Raviprajapati2023",
+  linkedin: "https://www.linkedin.com/in/ravi-prajapati-34a597215/",
+  email: "ravip.uidev@gmail.com",
+};
+</script>

@@ -9,15 +9,19 @@
       <div class="flex gap-6">
         <a
           v-for="item in menuItems"
-          :key="item"
+          :key="item.label"
           class="hover:text-orange-500 transition-colors"
+          :href="`#${item.link}`"
         >
-          {{ item }}
+          {{ item.label }}
         </a>
       </div>
     </nav>
 
-    <div class="flex items-center justify-between gap-x-2 gap-y-6">
+    <div
+      id="services"
+      class="flex items-center justify-between gap-x-2 gap-y-6"
+    >
       <div class="max-w-2xl">
         <h1 class="text-5xl font-bold mb-4">
           Hi, I'm
@@ -63,12 +67,22 @@ const description = ref(
   "An enthusiastic & highly energetic Technical development high revenue generating products."
 );
 
-const menuItems = [
-  "Services",
-  "About Me",
-  "Skills",
-  "Projects",
-  "Testimonials",
-  "Contact",
-];
+const menuItems = ref([
+  {
+    label: "Services",
+    link: "services",
+  },
+  {
+    label: "Skills",
+    link: "skills",
+  },
+  {
+    label: "About Me",
+    link: "aboutMe",
+  },
+  {
+    label: "Contact",
+    link: "contact",
+  },
+]);
 </script>
