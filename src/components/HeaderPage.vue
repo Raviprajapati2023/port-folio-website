@@ -10,7 +10,7 @@
         <a
           v-for="item in menuItems"
           :key="item.label"
-          class="hover:text-orange-500 transition-colors"
+          class="hover:text-orange-500 transition-colors cursor-pointer"
           @click.prevent="scrollToSection(item.link)"
         >
           {{ item.label }}
