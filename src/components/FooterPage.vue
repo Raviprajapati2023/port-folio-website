@@ -17,7 +17,7 @@
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
           <!-- About Us -->
           <div>
-            <h3 class="text-lg font-semibold mb-4">About Us</h3>
+            <h3 class="text-lg font-semibold mb-4">About Me</h3>
             <p class="text-gray-400">
               Making the world a better place through constructing elegant
               hierarchies.
@@ -25,7 +25,7 @@
           </div>
           <!-- Social Media -->
           <div>
-            <h3 class="text-lg font-semibold mb-4">Connect with Us</h3>
+            <h3 class="text-lg font-semibold mb-4">Connect Me</h3>
             <div class="flex space-x-4">
               <!-- GitHub Link -->
               <a
