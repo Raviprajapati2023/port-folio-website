@@ -25,7 +25,7 @@
           </div>
           <!-- Social Media -->
           <div>
-            <h3 class="text-lg font-semibold mb-4">Connect Me</h3>
+            <h3 class="text-lg font-semibold mb-4">Connect With Me</h3>
             <div class="flex space-x-4">
               <!-- GitHub Link -->
               <a
