@@ -60,7 +60,7 @@
             Me
           </span>
         </h2>
-        <p class="text-base lg:text-lg text-gray-300 leading-relaxed">
+        <p class="text-base lg:text-base text-gray-300 leading-relaxed">
           I am an enthusiastic and highly energetic developer with a proven
           track record of creating high-revenue-generating products. I have 3+
           years of experience in software development and expertise in HTML5,
@@ -70,7 +70,7 @@
           understanding of development lifecycles and frameworks.
         </p>
       </div>
-      <div class="grid grid-cols-3 gap-4">
+      <div class="grid md:grid-cols-3 sm:grid-cols-1 gap-4">
         <div
           class="text-center rounded-lg bg-[#111a3e] shadow-lg border border-[#1f1641] p-4"
           v-for="card in StatCard"
